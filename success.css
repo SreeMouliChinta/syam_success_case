@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+}
+
+button > img {
+  height: 20px;
+  width: 20px;
+}
+
+header {
+  height: 54px;
+  border-bottom: 2px solid #ddd;
+  padding: 0 32px;
+}
+
+header > div {
+  gap: 12px;
+}
+
+header .vertical-line {
+  border: 1px solid #ddd;
+}
+
+button.published {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 18px;
+}
+
+.top-tools {
+  transition: 0.2s;
+  height: 54px;
+  width: 95vw;
+  border-bottom: 2px solid #ddd;
+  padding: 0 32px;
+}
+
+.top-tools .drop-downs,
+.top-tools .pre-defined {
+  gap: 12px;
+}
+
+.side-tools {
+  height: 100%;
+  width: 5vw;
+  position: fixed;
+  z-index: 1;
+  top: 54px;
+  right: 0;
+  border-left: 2px solid #ddd;
+  padding: 24px 0;
+  gap: 24px;
+}
+
+.side-tools div {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.side-tool-content {
+  transition: 0.2s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 54px;
+  right: 5vw;
+}
+
+.opened {
+  width: 25vw;
+  border-left: 2px solid #ddd;
+}
+
+.side-tool-content .content {
+  width: 100%;
+  display: none;
+}
+
+.side-tool-content .content .head {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.side-tool-content .content .task-buttons {
+  border-bottom: 2px solid #ddd;
+}
+
+.side-tool-content .content .task-buttons > button {
+  padding: 12px;
+  /* width: calc(49% + 1.6px); */
+  width: 49%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888;
+}
+
+.task-selected {
+  color: #011185 !important;
+}
+
+.side-tool-content .content .task-buttons > button:hover {
+  color: #011185 !important;
+  background: #d1d6fb;
+}
+
+.side-tool-content .task-content.edit-schedule-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.side-tool-content .task-content.view-recent-runs-content {
+  display: none;
+  /* overflow-y: scroll;  */
+}
+
+.view-recent-runs-content .heading {
+  font-weight: 500;
+  color: #777;
+  padding: 8px;
+}
+
+.view-recent-runs-content .state-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 42px;
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #eee;
+}
+
+.view-recent-runs-content .content-block {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px 18px;
+  border-bottom: 2px solid #eee;
+}
+
+.view-recent-runs-content .content-block .state {
+  color: #fff;
+  background-color: #02ad52;
+  padding: 4px 12px;
+  border-radius: 18px;
+  letter-spacing: 1px;
+}
+
+.view-recent-runs-content .content-block .time {
+  cursor: pointer;
+}
